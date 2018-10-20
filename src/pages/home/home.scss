@@ -1,3 +1,9 @@
 page-home {
-    
+    ion-content{
+        height: calc(100% - 50px); // footer height (50px)
+        padding-top: 85px;
+        .scroll-content{
+            top: 73px; // header height
+        }
+    }
 }

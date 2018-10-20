@@ -1,0 +1,22 @@
+c-header{
+    display: block;
+    height: 73px;
+    ion-header{
+        background: rgb(0, 90, 141);
+        ion-buttons{
+            button{
+                &.button-default{
+                    background-color: transparent;
+                    &.activated{
+                        background-color: transparent;
+                    }
+                    ion-icon{
+                       &.icon{
+                           font-size:35px;
+                       } 
+                    }
+                }
+            }
+        }
+    }
+}
