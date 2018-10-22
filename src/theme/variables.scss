@@ -38,7 +38,9 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  header:     #005a8d,
+  footer:     #005a8d
 );
 
 
@@ -84,5 +86,50 @@ $colors: (
 // Fonts
 // --------------------------------------------------
 
-@import "roboto";
-@import "noto-sans";
+// UBUNTU BOLD
+@font-face {
+  font-family: 'Ubuntu-B';
+  src: url('../assets/fonts/Ubuntu-B.ttf');
+}
+
+// UBUNTU ITALIC BOLD
+@font-face {
+  font-family: 'Ubuntu-BI';
+  src: url('../assets/fonts/Ubuntu-BI.ttf');
+}
+
+// UBUNTU LIGHT
+@font-face {
+  font-family: 'Ubuntu-L';
+  src: url('../assets/fonts/Ubuntu-L.ttf');
+}
+
+// UBUNTU ITALIC LIGHT
+@font-face {
+  font-family: 'Ubuntu-LI';
+  src: url('../assets/fonts/Ubuntu-LI.ttf');
+}
+
+// UBUNTU MEDIUM
+@font-face {
+  font-family: 'Ubuntu-M';
+  src: url('../assets/fonts/Ubuntu-M.ttf');
+}
+
+// UBUNTU ITALIC MEDIUM
+@font-face {
+  font-family: 'Ubuntu-MI';
+  src: url('../assets/fonts/Ubuntu-MI.ttf');
+}
+
+// UBUNTU REGULAR
+@font-face {
+  font-family: 'Ubuntu-R';
+  src: url('../assets/fonts/Ubuntu-R.ttf');
+}
+
+// UBUNTU ITALIC REGULAR
+@font-face {
+  font-family: 'Ubuntu-RI';
+  src: url('../assets/fonts/Ubuntu-RI.ttf');
+}

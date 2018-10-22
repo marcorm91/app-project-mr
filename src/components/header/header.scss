@@ -2,11 +2,12 @@ c-header{
     display: block;
     height: 73px;
     ion-header{
-        background: rgb(0, 90, 141);
+        background: map-get($colors, header);
         ion-buttons{
             button{
                 &.button-default{
                     background-color: transparent;
+                    box-shadow: none;
                     &.activated{
                         background-color: transparent;
                     }
@@ -15,6 +16,9 @@ c-header{
                            font-size:35px;
                        } 
                     }
+                }
+                &:hover:not(.disable-hover){
+                    background-color: transparent;
                 }
             }
         }

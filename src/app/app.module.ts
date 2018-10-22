@@ -13,12 +13,14 @@ import { ListPage } from '../pages/list/list';
 
 // COMPONENTS
 import { HeaderComponent } from '../components/header/header';
+import { FooterComponent } from '../components/footer/footer';
 
 
 @NgModule({
   declarations: [
     MyApp,
     HeaderComponent,
+    FooterComponent,
     HomePage,
     ListPage
   ],
@@ -32,6 +34,7 @@ import { HeaderComponent } from '../components/header/header';
     HomePage,
     ListPage,
     HeaderComponent,
+    FooterComponent,
   ],
   providers: [
     StatusBar,
