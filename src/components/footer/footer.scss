@@ -11,10 +11,31 @@ c-footer{
                     &.row{
                         ion-col{
                             &.col{
+                                // first and second col
+                                &:not(:last-child){
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
                                 span{
                                     color: $white;
                                     font-family: Ubuntu-B;
                                     font-size: 14px;
+                                }
+                            }
+                            // hour, minute, second col
+                            &:last-child{
+                                &.col{
+                                    span{
+                                        &:not(:last-child){
+                                            font-size: 20px;
+                                            &:after{
+                                                content: ':';
+                                                display: inline-block;
+                                                font-size: 14px;
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
