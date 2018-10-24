@@ -2,8 +2,12 @@
     <ion-grid>
         <ion-row>
             <ion-col col-4></ion-col>
-            <ion-col col-4 text-center><span>APP MR</span></ion-col>
-            <ion-col col-4 text-center><span>{{hour}}</span><span>{{minute}}</span><span>{{second}}</span></ion-col>
+            <ion-col col-4 text-center>
+                <span>APP MR</span>
+            </ion-col>
+            <ion-col col-4 text-center>
+                <span>{{hour | transformDate}}</span><span>{{minute | transformDate}}</span><span>{{second | transformDate}}</span>
+            </ion-col>
         </ion-row>
     </ion-grid>
 </ion-footer>

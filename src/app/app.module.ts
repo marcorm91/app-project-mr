@@ -15,10 +15,14 @@ import { ListPage } from '../pages/list/list';
 import { HeaderComponent } from '../components/header/header';
 import { FooterComponent } from '../components/footer/footer';
 
+//PIPES
+import { TransformDate } from '../pipes/transformDate.pipe';
+
 
 @NgModule({
   declarations: [
     MyApp,
+    TransformDate,
     HeaderComponent,
     FooterComponent,
     HomePage,
