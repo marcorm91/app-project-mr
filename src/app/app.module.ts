@@ -9,11 +9,11 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 // PAGES
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 
 // COMPONENTS
 import { HeaderComponent } from '../components/header/header';
 import { FooterComponent } from '../components/footer/footer';
+import { CurrentDateComponent } from '../components/c-currentDate/c-currentDate';
 
 //PIPES
 import { TransformDate } from '../pipes/transformDate.pipe';
@@ -25,8 +25,8 @@ import { TransformDate } from '../pipes/transformDate.pipe';
     TransformDate,
     HeaderComponent,
     FooterComponent,
-    HomePage,
-    ListPage
+    CurrentDateComponent,
+    HomePage
   ],
   imports: [
     BrowserModule,
@@ -36,7 +36,6 @@ import { TransformDate } from '../pipes/transformDate.pipe';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,
     HeaderComponent,
     FooterComponent,
   ],

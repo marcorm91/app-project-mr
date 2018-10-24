@@ -1,0 +1,18 @@
+c-currentDate{
+    ion-grid{
+        ion-row{
+            ion-col{
+                span{
+                    font-size: 70px;
+                    color: $color-mainapp;
+                    &:first-child{
+                        font-family: 'Ubuntu-B';
+                    }
+                    &:last-child{
+                        font-family: 'Ubuntu-L';
+                    }
+                }
+            }
+        }
+    }
+}

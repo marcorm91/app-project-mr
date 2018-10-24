@@ -11,21 +11,18 @@ c-footer{
                     &.row{
                         ion-col{
                             &.col{
-                                // first and second col
-                                &:not(:last-child){
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                }
                                 span{
                                     color: $white;
                                     font-family: Ubuntu-B;
                                     font-size: 14px;
                                 }
-                            }
-                            // hour, minute, second col
-                            &:last-child{
-                                &.col{
+                                // col time
+                                &:first-child{
+                                    display: flex;
+                                    align-items: center;
+                                }
+                                // col current date
+                                &:last-child{
                                     span{
                                         &:not(:last-child){
                                             font-size: 20px;
