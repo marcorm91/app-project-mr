@@ -2,8 +2,15 @@ page-home {
     ion-content{
         height: calc(100% - 50px); // footer height (50px)
         padding-top: 85px;
-        .scroll-content{
-            top: 73px; // header height
+        &.content-md{
+            .scroll-content{
+                top: 65px; // header height (material design)
+            }
+        }
+        &.content-ios{
+            .scroll-content{
+                top: 73px; // header height (ios)
+            }
         }
     }
 }

@@ -1,8 +1,15 @@
 <ion-grid>
     <ion-row>
-        <ion-col text-center>
-            <span>{{hour | transformDate}}</span>
-            <span>{{minute | transformDate}}</span>
+        <ion-col col-12 text-center no-padding>
+            <div>
+                <span>{{hour | transformDate}}</span>
+                <span>{{minute | transformDate}}</span>
+            </div>
+        </ion-col>
+        <ion-col col-12 no-padding>
+            <div>
+                <span>{{date.toLocaleDateString()}}</span>
+            </div>
         </ion-col>
     </ion-row>
 </ion-grid>

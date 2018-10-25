@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 })
 export class CurrentDateComponent {
 
-    private date = new Date();
+    public date = new Date();
 
     public hour: number;
     public minute: number;

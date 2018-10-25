@@ -1,15 +1,35 @@
 c-currentDate{
+    display: block;
     ion-grid{
         ion-row{
             ion-col{
-                span{
-                    font-size: 70px;
-                    color: $color-mainapp;
-                    &:first-child{
-                        font-family: 'Ubuntu-B';
+                // time col
+                &:first-child{
+                    > div{
+                        width: 175px;
+                        margin: auto;
+                        span{
+                            font-size: 70px;
+                            color: $color-mainapp;
+                            &:first-child{
+                                font-family: 'Ubuntu-B';
+                            }
+                            &:last-child{
+                                font-family: 'Ubuntu-L';
+                            }
+                        }
                     }
-                    &:last-child{
-                        font-family: 'Ubuntu-L';
+                }
+                // date col
+                &:last-child{
+                    > div{
+                        width: 155px;
+                        margin: auto;
+                        span{
+                            font-size: 16px;
+                            font-family: 'Ubuntu-L';
+                            color: $color-mainapp;
+                        }
                     }
                 }
             }
