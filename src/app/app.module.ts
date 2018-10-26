@@ -1,11 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
 
-// GENERIC IONIC
+// IONIC
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
 
 // PAGES
 import { MyApp } from './app.component';
@@ -21,7 +21,7 @@ import { GeolocationComponent } from './../components/c-geolocation/c-geolocatio
 // PIPES
 import { TransformDate } from '../pipes/transformDate.pipe';
 
-// HTTP
+// PROVIDERS
 import { HttpClientModule } from '@angular/common/http';
 import { WeatherServiceProvider } from '../providers/weather-service/weather-service';
 
