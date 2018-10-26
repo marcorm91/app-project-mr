@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 // GENERIC IONIC
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { Geolocation } from '@ionic-native/geolocation';
 
 // PAGES
 import { MyApp } from './app.component';
@@ -14,9 +15,15 @@ import { HomePage } from '../pages/home/home';
 import { HeaderComponent } from '../components/header/header';
 import { FooterComponent } from '../components/footer/footer';
 import { CurrentDateComponent } from '../components/c-currentDate/c-currentDate';
+import { CurrentWeatherComponent } from './../components/c-currentWeather/c-currentWeather';
+import { GeolocationComponent } from './../components/c-geolocation/c-geolocation';
 
-//PIPES
+// PIPES
 import { TransformDate } from '../pipes/transformDate.pipe';
+
+// HTTP
+import { HttpClientModule } from '@angular/common/http';
+import { WeatherServiceProvider } from '../providers/weather-service/weather-service';
 
 
 @NgModule({
@@ -26,10 +33,13 @@ import { TransformDate } from '../pipes/transformDate.pipe';
     HeaderComponent,
     FooterComponent,
     CurrentDateComponent,
+    CurrentWeatherComponent,
+    GeolocationComponent,
     HomePage
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
@@ -42,7 +52,9 @@ import { TransformDate } from '../pipes/transformDate.pipe';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    Geolocation,
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    WeatherServiceProvider
   ]
 })
 export class AppModule {}
